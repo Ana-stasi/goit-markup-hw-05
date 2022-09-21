@@ -24,7 +24,7 @@
             >Web<span class="accent">Studio</span></a
           >
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item "><a href="./index.html" class="link current">Студія</a></li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
@@ -57,7 +57,7 @@
       <div class="hero-background">
         <section class="hero">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button data-modal-open class="hero-button">Замовити послугу</button>
         </section>
       </div>
 
@@ -127,24 +127,27 @@
                 src="./images/studio/box1.jpg"
                 alt="Поиск решений"
                 width="370"
-                height="294"
+                height="auto"
               />
+              <p class="description">Десктопні додатки</p>
             </li>
             <li class="item">
               <img
                 src="./images/studio/box2.jpg"
                 alt="Створення прототипів"
                 width="370"
-                height="294"
+                height="auto"
               />
+              <p class="description">Мобільні додатки</p>
             </li>
             <li class="item">
               <img
                 src="./images/studio/box3.jpg"
                 alt="Тестирование идей"
                 width="370"
-                height="294"
+                height="auto"
               />
+              <p class="description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -357,6 +360,16 @@
           </ul>
         </div>
       </section>
+
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+          <button data-modal-close class="close-btn">
+            <svg class="cross">
+              <use href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -415,5 +428,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
