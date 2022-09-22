@@ -558,9 +558,7 @@ background-color: var(--grey-color);
 
 .work-categories .button{
     padding: 6px 22px;
-    border-color:var(--grey-color);
-    border-radius: 4px;
-    
+    border: transparent;
     background-color: var(--grey-color);
     color:var(--title-color);
     font-family: 'Roboto',sans-serif;
@@ -579,7 +577,7 @@ background-color: var(--grey-color);
 
 .work-categories .button:hover,
 .work-categories .button:focus{
-    border-color: var(--accent-color);
+  
     background-color: var(--accent-color);
     color:var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
